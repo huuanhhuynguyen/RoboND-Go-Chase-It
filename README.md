@@ -50,7 +50,7 @@ $ catkin_init_workspace
 
 3. Within `catkin_ws/src`, clone the project and extract the two packages
 ```
-$ git clone TODO
+$ git clone https://github.com/huuanhhuynguyen/RoboND-Go-Chase-It.git
 $ cp -R RoboND-Go-Chase-It/ball_chaser .
 $ cp -R RoboND-Go-Chase-It/my_robot .
 $ rm -rf RoboND-Go-Chase-It
