@@ -5,7 +5,7 @@ Use ROS and Gazebo to build a mobile robot for chasing a white ball.
 ![demo](demo.gif)
 
 ## Structure
-
+```
 .Project2                          # Go Chase It Project
 ├── my_robot                       # my_robot package
 │   ├── launch                     # launch folder for launch files
@@ -31,6 +31,7 @@ Use ROS and Gazebo to build a mobile robot for chasing a white ball.
 │   ├── CMakeLists.txt             # compiler instructions
 │   ├── package.xml                # package info
 └──
+```
 
 ### 1. my_robot
 This package defines the world and the robot.
