@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+  <!-- Launch the /ball_chaser/drive_bot node -->
+  <node name="drive_bot" pkg="ball_chaser" type="drive_bot"/>
+
+  <!-- Launch the /ball_chaser/process_image node -->
+  <node name="process_image" pkg="ball_chaser" type="process_image"/>
+
+</launch>
+
