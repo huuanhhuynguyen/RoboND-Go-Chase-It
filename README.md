@@ -34,6 +34,7 @@ Use ROS and Gazebo to build a mobile robot for chasing a white ball.
 └──
 ```
 **my_robot**: This package defines the world and the robot.
+
 **ball_chaser**: This package contains two ROS nodes for commanding the robot to chase the white ball.
 
 ## Setup, Build and Launch
