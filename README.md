@@ -3,7 +3,7 @@
 Use ROS and Gazebo to build a mobile robot for chasing a white ball.
 
 <a href="https://www.youtube.com/watch?v=fugrDDqZiU8&feature=youtu.be" target="_blank">
-<img src="demo.gif" alt="circuit" width="750" height="420"/></a>
+<img src="demo.gif" alt="circuit" width="500" height="280"/></a>
 
 ## Structure
 ```
@@ -33,12 +33,8 @@ Use ROS and Gazebo to build a mobile robot for chasing a white ball.
 │   ├── package.xml                # package info
 └──
 ```
-
-### 1. my_robot
-This package defines the world and the robot.
-
-### 2. ball_chaser
-This package contains two ROS nodes for commanding the robot to chase the white ball.
+**my_robot**: This package defines the world and the robot.
+**ball_chaser**: This package contains two ROS nodes for commanding the robot to chase the white ball.
 
 ## Setup, Build and Launch
 1. Install Gazebo and ROS on Linux.
