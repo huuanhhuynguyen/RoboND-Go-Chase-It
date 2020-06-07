@@ -3,7 +3,7 @@
 Use ROS and Gazebo to build a mobile robot for chasing a white ball.
 
 <a href="https://www.youtube.com/watch?v=fugrDDqZiU8&feature=youtu.be" target="_blank">
-<img src="demo.gif" alt="circuit" width="500" height="280"/></a>
+<img src="demo.gif" alt="demo" width="500" height="280"/></a>
 
 ## Structure
 ```
