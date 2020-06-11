@@ -37,41 +37,39 @@ Use ROS and Gazebo to build a mobile robot for chasing a white ball.
 
 **ball_chaser**: This package contains two ROS nodes for commanding the robot to chase the white ball.
 
-## Setup, Build and Launch
-1. Install Gazebo and ROS on Linux.
+## Prerequisites
+ 
+1. Install Gazebo and [ROS](http://wiki.ros.org/ROS/Installation) on Linux.
+2. Install `sudo apt-get install ros-${ROS_DISTRO}-gazebo-ros-pkgs`
+(If you are using gazebo11 it should be `sudo apt-get install ros-${ROS_DISTRO}-gazebo11-ros-pkgs`)
+3. Cmake and gcc/g++
 
-2. Initialize a catkin workspace
+## Build and Launch
+
+1. Clone and initialize project with a catkin workspace
 ```console
-$ mkdir -p catkin_ws/src
-$ cd catkin_ws/src
-$ catkin_init_workspace
-```
-
-3. Within `catkin_ws/src`, clone the project and extract the two packages
-```
+$ mkdir catkin_ws && cd catkin_ws
 $ git clone https://github.com/huuanhhuynguyen/RoboND-Go-Chase-It.git
-$ cp -R RoboND-Go-Chase-It/ball_chaser .
-$ cp -R RoboND-Go-Chase-It/my_robot .
-$ rm -rf RoboND-Go-Chase-It
+$ mv RoboND-Go-Chase-It src
+$ cd src && catkin_init_workspace
 ```
 
-4. Move back to `catkin_ws\` and build
+2. Move back to `catkin_ws\` and build
 ```
 $ cd ..
 $ catkin_make
 ```
 
-5. Launch the world
+3. Launch the world
 ```
 $ source devel/setup.bash
 $ roslaunch my_robot world.launch
 ```
 
-6. Open another terminal (Ctrl+Shift+T), and launch the `ball_chaser` package
+4. Open another terminal (Ctrl+Shift+T), and launch the `ball_chaser` package
 ```
 $ source devel/setup.bash
 $ roslaunch ball_chaser ball_chaser.launch
 ```
 
-7. Play around! Pick up the white ball and place in front of the mobile robot. The robot will follow the ball.
-
+5. Play around! Pick up the white ball and place in front of the mobile robot. The robot will follow the ball.
