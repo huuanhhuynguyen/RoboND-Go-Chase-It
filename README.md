@@ -40,8 +40,8 @@ Use ROS and Gazebo to build a mobile robot for chasing a white ball.
 ## Prerequisites
  
 1. Install Gazebo and [ROS](http://wiki.ros.org/ROS/Installation) on Linux.
-2. Install `sudo apt-get install ros-melodic-gazebo-ros-pkgs`
-(If you are using gazebo11 it should be `sudo apt-get install ros-melodic-gazebo11-ros-pkgs`)
+2. Install `sudo apt-get install ros-${ROS_DISTRO}-gazebo-ros-pkgs`
+(If you are using gazebo11 it should be `sudo apt-get install ros-${ROS_DISTRO}-gazebo11-ros-pkgs`)
 3. Cmake and gcc/g++
 
 ## Build and Launch
